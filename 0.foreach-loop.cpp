@@ -20,9 +20,8 @@ int main(){
 
 
 // now see for each loop
-//under algorithm header file
+//under algorithm header file, and never use in normal array only use in vector
 for_each(vec.begin(), vec.end(), [](int i){
   cout<<i<<" ";
 });
 
-}
