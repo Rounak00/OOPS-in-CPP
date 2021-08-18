@@ -18,3 +18,4 @@ int main(){
           obj.lar();
     return 0;      
 }
+// inline function basically request to compiler it depend on compiler accept it or not

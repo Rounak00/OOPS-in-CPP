@@ -33,6 +33,8 @@ int main(){
     obj2.setdata();
     obj2.getdata();
 
+cout<<Employee.count<<endl; // we can access static function or variables using class name
+
     return 0;
 
 }
