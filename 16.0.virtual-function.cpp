@@ -20,3 +20,40 @@ int main(){
 }
 // here it is also knon as function overriding which is happen in runtime polymorphism
 // if we dont use virtual key word then pointer's class's print will exicuted thats why we use virtual key word; 
+
+
+//Virtual constructor not possible
+// Virtual Destructor
+class base{
+  public:
+    base(){cout<<"base const \n";}
+    virtual ~base(){cout<<"base dest \n";}
+};
+class derived:public base{
+    public:
+      derived(){cout<<"derived const \n";}
+    ~derived(){cout<<"derived dest \n";}
+};
+
+
+
+int main() {
+   base *b=new base();
+   base *d=new derived(); 
+    
+   delete b;
+   delete d; 
+}
+ /* output:
+ 
+ base const 
+base const 
+derived const 
+base dest 
+derived dest 
+base dest 
+ */
+
+/*
+if dont use virtual keyword
+*/
