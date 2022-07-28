@@ -30,3 +30,13 @@ int main()
     cout << fun_ptr(10, 20);
     return 0 ;
 }
+
+
+//Another Example
+void f(int a){
+    cout<<a;
+}
+int main() {
+ void (*p)(int)=&f;  // we can do this also p=f;
+    p(5);
+}
