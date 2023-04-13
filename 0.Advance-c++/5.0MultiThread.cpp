@@ -13,6 +13,6 @@ int main(){
   thread t2 {fn,l};
   
   t1.join();
-  t2.join();
+  t2.join(); // if we dont use join here -terminate called without an active exception
 return 0;
 }
